@@ -17,10 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     document.addEventListener('scroll', function () {
-        // Aqui dentro a gente escreve o código que quer executar quando tiver o scroll
-        // Pode ser qualquer coisa, desde alterar o estilo de algum elemento até fazer uma requisição HTTP
 
-        // Por exemplo, posso exibir uma mensagem no console:
 
         let scrollTop = document.documentElement.scrollTop
 
@@ -53,7 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
         if (isScrollNoFinal()) {
-            console.log("Está no topo da página")
             let arrow1 = document.getElementById("arrow2")
             arrow1.style.transform = "rotate(180deg)";
             arrow1.parentElement.href = "#stacks"
@@ -68,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     updateInterceptors()
 
 
-    let stacks = [
+    const stacks = [
         {
             "avatar": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg",
             "title": "CSS",
@@ -113,9 +109,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    let lorem = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam voluptates esse itaque aspernatur temporibus distinctio, ipsum dignissimos modi, iste repellat, voluptatem officiis? Vero mollitia cupiditate quia debitis molestiae. Minus, ab."
-
-
 
     document.getElementById("stacklist").innerHTML = stacks.map((e) => `<div class="w-full md:w-[216px]  px-4 py-1  lg:w-54 rounded mt-4">
 
@@ -128,7 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    let stacks2 = [
+    const stacks2 = [
         `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" title="CSS" description="Cascading Style Sheets (CSS) é uma linguagem de folha de estilos usada para descrever a apresentação de um documento escrito em HTML."/>`,
         `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" title="HTML" description="Hypertext Markup Language (HTML) é a linguagem de marcação padrão para criar páginas da web e aplicações web."/>`,
         `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" title="JavaScript" description="JavaScript é uma linguagem de programação que permite páginas da web e aplicações web interativas."/>`,
@@ -193,7 +186,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    let projectsArray = [
+    const projectsArray = [
         {
             link: "https://www.gptnerdes.com/",
             name: "GptNerdes - GPT chat para nerdes"
