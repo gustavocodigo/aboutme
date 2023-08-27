@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVLh1l7LN4ENA-eG3saEQbjwtu9iZqEn6Z6Q&usqp=CAU>
+
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+
+  <title>Portfolio - Desenvolvedor de Software</title>
+  <meta property="og:title" content="Portfolio - Desenvolvedor de Software">
+  <meta property="og:description" content="Portfolio - Desenvolvedor de Software">
+
+
+
+  <!-- ==== STYLE.CSS ==== -->
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- ====  REMIXICON CDN ==== -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- ==== ANIMATE ON SCROLL CSS CDN  ==== -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- TailWind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+
+<body id="top" class="m-auto w-[1216px] mw-full">
+  <!-- ==== HEADER ==== -->
+  <header class="container header">
+    <!-- ==== NAVBAR ==== -->
+    <nav class="nav">
+
+      <h2 class="mx-[60px]">José Gustavo Portfolio</h2>
+
+
+      <div class="nav_menu" id="nav_menu">
+        <button class="close_btn" id="close_btn">
+          <i class="ri-close-fill"></i>
+        </button>
+
+        <ul class="nav_menu_list">
+          <li class="nav_menu_item">
+            <a href="#stacks" class="nav_menu_link" onclick="document.getElementById('close_btn').click()">Stacks</a>
+          </li>
+          <li class="nav_menu_item">
+            <a href="#projetos" class="nav_menu_link"
+              onclick="document.getElementById('close_btn').click()">Projetos</a>
+          </li>
+          <li class="nav_menu_item">
+            <a href="#contact" class="nav_menu_link" onclick="document.getElementById('close_btn').click()">Contato</a>
+          </li>
+
+        </ul>
+      </div>
+
+      <button class="toggle_btn" id="toggle_btn">
+        <i class="ri-menu-line"></i>
+      </button>
+    </nav>
+  </header>
+
+  <section class="flex flex-wrap items-center m-auto w-600 max-w-full" id="about">
+    <div class="container-full-screen max-w-full m-auto">
+      <div
+        class="flex flex-wrap items-center justify-center container-full-screen container-full-screen flex-row-reverse lg:flex-row m-auto">
+
+        <div>
+
+        </div>
+        <div class="p-2 lg:p-12 w-full lg:w-[560px]  max-w-full">
+          <h1 class="main-heading">
+            Resumo básico
+          </h1>
+          <p class="info-text  text-sm m-auto text-xs md:w-[400px] lg:w-full mw-full mt-4">
+            Gosto de programação e resolução de problemas, me resumiria com uma mentalidade voltada para
+            soluções. Comprometido em criar código eficiente e funcional, busco constantemente aprimorar minhas
+            habilidades técnicas.
+            
+            Estou pronto para mergulhar em desafios e colaborar em projetos.
+          </p>
+          <div class="btn_wrapper">
+
+          </div>
+        </div>
+
+
+        <div class="p-8 md:p-24 max-w-full">
+          <div class="flip-card flex items-center justify-center ">
+            <div class="flip-card-inner">
+              <div class="flip-card-front flex items-center justify-center">
+                <img id="topavatar" src="" class="max-w-full rounded-full animate-pulse	profile" alt="Profile Photo" />
+
+                <p class="text-sm absolute bottom-2 bg-[#00000099] text-white p-2 w-[160px] md:hidden">Click = Stacks
+                </p>
+                <p class="text-sm absolute bottom-2 bg-[#00000099] text-white p-2 w-[160px] hidden md:block">Hover =
+                  Stacks </p>
+              </div>
+              <div class="flip-card-back relative flex items-center justify-center" id="avatarback">
+                <div clas="">
+                  <div class="text-xs">21 years old</div>
+                  <div class="text-xs">Forquilha - CE</div>
+                  <div class="text-xs">Formação: Técnico</div>
+
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+      <div id="stacks"></div>
+      <div class="flex justify-center text-black items-center md:m-auto">
+
+        <a href="#stacks">
+          <svg id="arrow1" class="" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z" />
+          </svg>
+        </a>
+      </div>
+
+
+      <div class="px-4 py-4 md:px-12 lg:py-12 max-w-full container-full-screen mb-[80px] md:mx-auto" id="stacks">
+        <h1 class="text-lg"><b>Stacks</b></h1>
+        <div id="stacklist" class="flex flex-col md:flex-row max-w-full flex-wrap md:space-x-1 md:m-auto">
+
+        </div>
+        <hr id="projetos" class="my-6">
+        </hr>
+        <b>Projetos</b>
+        <div class="flex flex-col md:flex-row flex-wrap md:gap-1 p-2" id="projects">
+        </div>
+      </div>
+      <div class="flex justify-center text-black items-center ">
+
+        <a href="#contact">
+          <svg id="arrow2" class="" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z" />
+          </svg>
+        </a>
+      </div>
+
+
+
+      <div id="contact" class="container-full-screen flex justify-between flex-col">
+
+
+        <div class="flex justify-between max-w-[70] flex-wrap px-2 md:px-12 flex items-center h-full ">
+
+
+          <div class="flex w-full justify-between flex-wrap md:gap-16 p-4">
+            <div class="w-[500px] ">
+              <p>
+              <h1 class="text-lg w-300"><b>Contato</b></h1>
+              Procurando se conectar? Sinta-se à vontade para entrar em contato. Você pode enviar um e-mail para mim, fornecendo seus detalhes através do formulário de contato. Tambem estou disponível para interações nas redes sociais. como LinkedIn, estou pronto para trocar ideias, compartilhar conhecimento e colaborar em projetos. Não hesite em alcançar-me, pois adoro expandir minha rede e participar de discussões.
+              <br></br>
+              Aguardo ansiosamente por oportunidades de nos conectarmos e criarmos algo incrível juntos.
+
+              </p>
+
+              <div class="flex flex-wrap items-center gap-x-6">
+                <a href="https://www.linkedin.com/in/josé-gustavo-b8aa70238" target="__blank">
+                  <img class="h-24"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original-wordmark.svg" />
+
+                </a>
+                <a href="https://github.com/gustavocodigo" target="__blank">
+                  <img class="h-12"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" />
+                </a>
+
+                <a href="https://discord.com/users/1032848324497248336" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                    <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
+                  </svg>
+                </a>
+              </div>
+
+            </div>
+
+            <div class=" mt-12 lg:mt-0">
+              <div class="w-full max-w-full">
+                <form class="bg-white shadow-md rounded px-6 pb-8 mb-4">
+                  <div class="mb-4">
+                    <label class="block text-gray-700 font-bold mb-2 text-md" for="username">
+                      Email ou contato
+                    </label>
+                    <input
+                      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      id="contact-in" type="text" placeholder="Contato">
+                  </div>
+                  <div class="mb-6">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="desc">
+                      Descrição
+                    </label>
+                    <input
+                      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                      id="description-in" type="" placeholder="Olá Gustavo tudo bem?">
+                   
+                  </div>
+                  <div class="flex items-center justify-between ml-auto block">
+                    <button
+                      class="w-full bg-black hover:opacity-80 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ml-auto"
+                      type="button"
+                      id="send-in">
+                      ENVIAR
+                    </button>
+
+                  </div>
+                </form>
+
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+        <footer class="flex justify-center py-4">
+          <h1>Copyright - Gustavo 2023</h1>
+        </footer>
+
+
+      </div>
+
+
+      <div
+        class="fixed top-0 left-0 bg-[#000000DD] h-full max-w-full w-full flex flex-col  hidden items-center justify-center"
+        id="infor">]
+        <div class="p-6 md:p-0">
+          <div class="w-[400px] md:w-[500px] w-full p-8 py-2 pb-6 text-black bg-white">
+            <div class="cursor-pointer m"
+              onclick="this.parentElement.parentElement.parentElement.classList.toggle('hidden');">
+              <svg class="block ml-auto" xmlns="http://www.w3.org/2000/svg" width="52" height="52" fill="black"
+                class="bi bi-x" viewBox="0 0 16 16">
+                <path
+                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+              </svg>
+            </div>
+            <h1 class="text-black font-bold mt-10 text-lg" id="description-title"></h1>
+
+            <p id="description" class="text-black mt-4">
+
+            </p>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+  </section>
+
+
+
+
+  <!-- ==== ANIMATE ON SCROLL JS CDN -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- ==== GSAP CDN ==== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  <!-- ==== SCRIPT.JS ==== -->
+  <script src="./js/script.js" defer></script>
+  <script src="./js/nav.js"></script>
+
+
+
+
+</body>
+
+</html>
