@@ -16,7 +16,7 @@
 
 
   <!-- ==== STYLE.CSS ==== -->
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="/dist/style.css" />
 
   <!-- ====  REMIXICON CDN ==== -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
@@ -24,8 +24,7 @@
   <!-- ==== ANIMATE ON SCROLL CSS CDN  ==== -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-  <!-- TailWind -->
-  <script src="https://cdn.tailwindcss.com"></script>
+
 
 
 </head>
@@ -36,7 +35,7 @@
     <!-- ==== NAVBAR ==== -->
     <nav class="nav">
 
-      <h2 class="mx-[60px]">José Gustavo Portfolio</h2>
+      <h2 class="mx-2">José Gustavo Portfolio</h2>
 
 
       <div class="nav_menu" id="nav_menu">
@@ -90,15 +89,15 @@
         </div>
 
 
-        <div class="p-8 md:p-24 max-w-full">
+        <div class="p-8 md:p-4 max-w-full">
           <div class="flip-card flex items-center justify-center ">
             <div class="flip-card-inner">
               <div class="flip-card-front flex items-center justify-center">
                 <img id="topavatar" src="" class="max-w-full rounded-full animate-pulse	profile" alt="Profile Photo" />
 
-                <p class="text-sm absolute bottom-2 bg-[#00000099] text-white p-2 w-[160px] md:hidden">Click = Stacks
+                <p class="text-sm absolute bottom-2 bg-[#00000099] text-white p-2 w-[160px] md:hidden text-center rounded-s-full ">Click = Stacks
                 </p>
-                <p class="text-sm absolute bottom-2 bg-[#00000099] text-white p-2 w-[160px] hidden md:block">Hover =
+                <p class="text-sm absolute bottom-2 bg-[#00000099] text-white p-2 w-[160px] hidden md:block text-center rounded-s-full ">Hover =
                   Stacks </p>
               </div>
               <div class="flip-card-back relative flex items-center justify-center" id="avatarback">
@@ -133,16 +132,24 @@
       </div>
 
 
-      <div class="px-4 py-4 md:px-12 lg:py-12 max-w-full container-full-screen mb-[80px] md:mx-auto" id="stacks">
-        <h1 class="text-lg"><b>Stacks</b></h1>
-        <div id="stacklist" class="flex flex-col md:flex-row max-w-full flex-wrap md:space-x-1 md:m-auto">
+      <div class="px-4 py-4 md:px-12 lg:py-12 max-w-full container-full-screen mb-[40px] md:mx-auto flex flex-col md:flex-row-reverse md:gap-2" id="stacks">
 
+
+        <div>
+          <h1 class="text-sm"><b>Stacks</b></h1>
+          <div id="stacklist" class="w-full grid grid-cols-1 md:grid-cols-3 gap-2 lg:grid-cols-4 lg:gap-8 lg:m-4">
+            
+          </div>
         </div>
-        <hr id="projetos" class="my-6">
+       <div>
+        <hr class="m-8 md:hidden">
+        <b class="text-sm ">Projetos</b>
+        <div class="grid grid-cols-1 md:w-52" id="projects">
+        </div>
+       </div>
+        <hr id="projetos" class="mt-6 lg:my-0">
         </hr>
-        <b>Projetos</b>
-        <div class="flex flex-col md:flex-row flex-wrap md:gap-1 p-2" id="projects">
-        </div>
+     
       </div>
       <div class="flex justify-center text-black items-center ">
 
@@ -164,12 +171,25 @@
 
 
           <div class="flex w-full justify-between flex-wrap md:gap-16 p-4">
-            <div class="w-[500px] ">
+            <div class="w-[400px] ">
               <p>
-              <h1 class="text-lg w-300"><b>Contato</b></h1>
-              Procurando se conectar? Sinta-se à vontade para entrar em contato. Você pode enviar um e-mail para mim, fornecendo seus detalhes através do formulário de contato. Tambem estou disponível para interações nas redes sociais. como LinkedIn, estou pronto para trocar ideias, compartilhar conhecimento e colaborar em projetos. Não hesite em alcançar-me, pois adoro expandir minha rede e participar de discussões.
-              <br></br>
-              Aguardo ansiosamente por oportunidades de nos conectarmos e criarmos algo incrível juntos.
+              <h1 class="text-lg w-[200px] "><b>Contato</b></h1>
+              <pre style="white-space: pre-line; font-family: inherit; " class="text-xs line-1 anim-typewriter">
+                Procurando se conectar? Sinta-se à vontade para entrar em contato.
+                
+                Você pode enviar um e-mail para mim, fornecendo seus detalhes através do formulário de contato.
+
+                Tambem estou disponível para interações nas redes sociais.
+
+                como LinkedIn, estou pronto para trocar ideias, compartilhar conhecimento e colaborar em projetos.
+
+                Não hesite em alcançar-me, pois adoro expandir minha rede e participar de discussões.
+
+
+                Aguardo ansiosamente por oportunidades de nos conectarmos e criarmos algo incrível juntos.
+
+              </pre>
+             
 
               </p>
 

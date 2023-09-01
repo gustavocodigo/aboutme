@@ -110,14 +110,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    document.getElementById("stacklist").innerHTML = stacks.map((e) => `<div class="w-full md:w-[216px]  px-4 py-1  lg:w-54 rounded mt-4">
+    document.getElementById("stacklist").innerHTML = stacks.map((e) => 
+    
+    
+    `
+    
+    
+    
+    <div class="rounded mt-4 w-full ">
 
-    <div class="bg-[#121212DD] text-white px-4 py-2 rounded text-sm"> ${e.title}</div>
+    <div class="bg-[#121212DD] text-white px-4 py-2 rounded text-sm flex justify-between ">
+    <div>
+    ${e.title}
+    </div>
+    
+    <div class="flex gap-2">
+    <div id="red">
+    </div>
+    <div id="yellow">
+    </div>
+    <div id="green">
+    </div>
+    </div>
+    
+    </div>
     <p class="text-xs mt-4 px-2">
      ${e.description}
     </p>
    
-    </div>`).join("\n")
+    </div>`
+    ).join("\n")
 
 
 
@@ -227,7 +249,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById("projects").innerHTML = projectsArray.map((e) => `
       <a href="${e.link}" class="text-xs whitespace-normal max-w-full" target="__blank">
-      <div class="mt-2 p-2 bg-[#323232] w-full md:w-[350px] max-w-full text-white rounded flex items-center space-x-4 duration-700 hover:bg-[#32323298] flex gap-2">
+      <div class="mt-2 p-2 bg-[#323232] w-full max-w-full text-white rounded flex items-center space-x-4 duration-700 hover:bg-[#32323298] flex gap-2">
       <img src="https://icons.iconarchive.com/icons/hopstarter/mac-folders-2/48/Folder-Mac-icon.png" width=28>
        ${e.name}
       </div>

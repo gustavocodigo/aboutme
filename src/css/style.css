@@ -1,3 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+
 /* ==== "Inter" FONT-FAMILY FROM FONTS.GOOGLE.COM  ==== */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
 /* ==== ROOT RESET ==== */
@@ -468,3 +477,44 @@ body {
   transform: rotateY(180deg);
   padding: 12px;
 }
+
+
+
+
+
+
+
+#red {
+  background-color: #3583e9;
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  margin: 0 auto;
+
+  position:relative;
+}
+#yellow {
+  background-color: #00f0d0;
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  margin: 0 auto;
+
+  position:relative;
+  display: block;
+}
+#green {
+  background-color: #1a96af;
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  margin: 0 auto;
+  
+  position:relative;
+  display: block;
+}
+
+
+
+
+
