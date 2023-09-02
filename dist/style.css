@@ -1596,6 +1596,10 @@ body {
     margin-right: auto;
   }
 
+  .md\:mt-\[70px\] {
+    margin-top: 70px;
+  }
+
   .md\:block {
     display: block;
   }
