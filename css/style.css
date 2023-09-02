@@ -41,6 +41,8 @@ body {
   background-color: #fafbfb;
   display: flex;
   flex-direction: column;
+  color: black;
+
 }
 ul li {
   list-style-type: none;
@@ -109,7 +111,6 @@ button {
   letter-spacing: 0.5px;
 }
 .nav_menu_link:hover {
-  color: #bababa
 }
 .toggle_btn {
   font-size: 20px;
@@ -269,6 +270,8 @@ button {
   }
   .nav_menu {
     display: block;
+    padding: 0px;
+    margin: 0px;
   }
 }
 
@@ -423,7 +426,6 @@ button {
 body {
   background-repeat: no-repeat;
   max-width: 100%;
-  color: white;
 }
 
 
@@ -557,3 +559,10 @@ body {
   background: #17202E;
   border-radius: 0px;
 }
+
+
+.wave {
+  width: 100vw;
+  height: 60px;
+}
+

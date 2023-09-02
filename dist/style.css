@@ -607,8 +607,16 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-24 {
+  margin-top: 6rem;
 }
 
 .mt-4 {
@@ -621,10 +629,6 @@ video {
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.mt-\[70px\] {
-  margin-top: 70px;
 }
 
 .block {
@@ -655,8 +659,17 @@ video {
   height: 6rem;
 }
 
+.h-80 {
+  height: 20rem;
+}
+
 .h-full {
   height: 100%;
+}
+
+.h-max {
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .w-12 {
@@ -825,20 +838,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[conic-gradient\(at_bottom_right\2c _var\(--tw-gradient-stops\)\)\] {
-  background-image: conic-gradient(at bottom right, var(--tw-gradient-stops));
-}
-
-.from-sky-400 {
-  --tw-gradient-from: #38bdf8 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(56 189 248 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.to-blue-500 {
-  --tw-gradient-to: #3b82f6 var(--tw-gradient-to-position);
-}
-
 .p-2 {
   padding: 0.5rem;
 }
@@ -993,6 +992,7 @@ body {
   background-color: #fafbfb;
   display: flex;
   flex-direction: column;
+  color: black;
 }
 
 ul li {
@@ -1071,7 +1071,6 @@ button {
 }
 
 .nav_menu_link:hover {
-  color: #bababa
 }
 
 .toggle_btn {
@@ -1254,6 +1253,8 @@ button {
 
   .nav_menu {
     display: block;
+    padding: 0px;
+    margin: 0px;
   }
 }
 
@@ -1415,7 +1416,6 @@ button {
 body {
   background-repeat: no-repeat;
   max-width: 100%;
-  color: white;
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -1538,6 +1538,11 @@ body {
   border-radius: 0px;
 }
 
+.wave {
+  width: 100vw;
+  height: 60px;
+}
+
 .first-letter\:pr-1::first-letter {
   padding-right: 0.25rem;
 }
@@ -1596,6 +1601,10 @@ body {
     margin-right: auto;
   }
 
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
   .md\:mt-\[70px\] {
     margin-top: 70px;
   }
@@ -1652,6 +1661,11 @@ body {
     padding-left: 3rem;
     padding-right: 3rem;
   }
+
+  .md\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1696,4 +1710,10 @@ body {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
+
+  .lg\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
 }
+
