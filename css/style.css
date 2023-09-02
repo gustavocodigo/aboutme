@@ -410,12 +410,15 @@ button {
 
 
 
+
 #arrow1 {
   transition: 1s;
+  border-radius: 50% 1%;
 }
 
 #arrow2 {
   transition: 1s;
+  border-radius: 50% 1%;
 }
 
 #contact {

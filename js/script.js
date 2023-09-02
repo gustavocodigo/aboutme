@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     <div class="rounded mt-4 w-full  hover:bg-[#FFFFFF19] ">
 
-    <div class="bg-[#121212DD] text-white px-4 py-2 rounded text-sm flex justify-between hover:scale-70">
+    <div class="bg-[#17202E] text-white px-4 py-2 rounded text-sm flex justify-between hover:scale-70">
     <div>
     ${e.title}
     </div>

@@ -1403,10 +1403,12 @@ button {
 
 #arrow1 {
   transition: 1s;
+  border-radius: 50% 1%;
 }
 
 #arrow2 {
   transition: 1s;
+  border-radius: 50% 1%;
 }
 
 #contact {
@@ -1582,6 +1584,15 @@ body {
   background-color: #FFFFFF19;
 }
 
+.hover\:bg-\[\#\#17202E\]:hover {
+  background-color: ##17202E;
+}
+
+.hover\:bg-\[\#17202E\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 32 46 / var(--tw-bg-opacity));
+}
+
 .hover\:opacity-80:hover {
   opacity: 0.8;
 }
@@ -1709,11 +1720,6 @@ body {
   .lg\:py-12 {
     padding-top: 3rem;
     padding-bottom: 3rem;
-  }
-
-  .lg\:text-white {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 }
 
