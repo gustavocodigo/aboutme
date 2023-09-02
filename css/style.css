@@ -26,7 +26,7 @@
 :root {
   --primary-color: #1b1c1e;
   --link-color: #506690;
-  --btn-hover-color: #262626;
+  --btn-hover-color: #b8b8b8;
   --lg-heading: #161c2d;
   --text-content: #454647;
   --fixed-header-height: 4.5rem;
@@ -35,7 +35,7 @@
 /* ==== RESET HTML ==== */
 body {
   width: 100%;
-  min-height: calc(100svh);
+  min-height: 100svh;
   
   overflow-x: hidden;
   background-color: #fafbfb;
@@ -76,6 +76,9 @@ button {
 .header {
   height: var(--fixed-header-height);
   padding: 0 1.7rem;
+  width: 100vw;
+  left: 0;
+  top: 0;
 }
 
 /* ==== NAV ==== */
@@ -102,12 +105,11 @@ button {
 .nav_menu_item .nav_menu_link {
   font-size: 16.5px;
   line-height: 27px;
-  color: var(--link-color);
   text-transform: capitalize;
   letter-spacing: 0.5px;
 }
 .nav_menu_link:hover {
-  color: var(--primary-color);
+  color: #bababa
 }
 .toggle_btn {
   font-size: 20px;
@@ -147,7 +149,6 @@ button {
   margin-top: 1.5rem;
  
   line-height: 24px;
-  color: #334157;
 }
 .btn_wrapper {
   margin-top: 3.5rem;
@@ -420,12 +421,9 @@ button {
 
 
 body {
-  background: url(https://img.freepik.com/fotos-gratis/fundo-de-tecnologia-de-wireframe-abstrato-cinza_53876-101941.jpg?w=740&t=st=1693072043~exp=1693072643~hmac=7e89ecc950138bab1ac642ef98e3979f86a22efe9f383719ca91d3eda2a5ad54);
-  background-size: 100% 100vh;
   background-repeat: no-repeat;
-  min-height: 100svh;
-  width: 700px;
   max-width: 100%;
+  color: white;
 }
 
 
@@ -437,7 +435,6 @@ body {
   background-color: transparent;
   width: 300px;
   height: 300px;
-  border: 1px solid #f1f1f1;
   max-width: 100%;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -515,6 +512,48 @@ body {
 }
 
 
+.animation-delay-2s {
+  animation-delay: 2s;
+}
 
 
 
+.animation-delay-1s {
+  animation-delay: 2s;
+}
+
+
+
+.animation-delay-3s {
+  animation-delay: 2s;
+}
+
+
+
+.translate-x-calc {
+  transform: translateX(calc(-100vw + 400px)) translateY(-10%);
+  border-radius: 50px;
+  width: 100vw;
+  border: 10px solid #17202E;
+  background-color: #17202E;
+}
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #17202E;
+  border-radius: 0px;
+}

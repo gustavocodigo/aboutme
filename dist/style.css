@@ -534,40 +534,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 .pointer-events-none {
   pointer-events: none;
 }
@@ -594,6 +560,10 @@ video {
 
 .top-0 {
   top: 0px;
+}
+
+.z-30 {
+  z-index: 30;
 }
 
 .m-8 {
@@ -637,10 +607,6 @@ video {
   margin-top: 2.5rem;
 }
 
-.mt-12 {
-  margin-top: 3rem;
-}
-
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -649,8 +615,16 @@ video {
   margin-top: 1rem;
 }
 
+.mt-44 {
+  margin-top: 11rem;
+}
+
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mt-\[70px\] {
+  margin-top: 70px;
 }
 
 .block {
@@ -671,6 +645,10 @@ video {
 
 .h-12 {
   height: 3rem;
+}
+
+.h-16 {
+  height: 4rem;
 }
 
 .h-24 {
@@ -699,6 +677,10 @@ video {
 
 .w-\[400px\] {
   width: 400px;
+}
+
+.w-\[500px\] {
+  width: 500px;
 }
 
 .w-full {
@@ -813,9 +795,9 @@ video {
   background-color: #121212DD;
 }
 
-.bg-\[\#323232\] {
+.bg-\[\#17202E\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(50 50 50 / var(--tw-bg-opacity));
+  background-color: rgb(23 32 46 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#5eff71\] {
@@ -841,6 +823,20 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[conic-gradient\(at_bottom_right\2c _var\(--tw-gradient-stops\)\)\] {
+  background-image: conic-gradient(at bottom right, var(--tw-gradient-stops));
+}
+
+.from-sky-400 {
+  --tw-gradient-from: #38bdf8 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(56 189 248 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-blue-500 {
+  --tw-gradient-to: #3b82f6 var(--tw-gradient-to-position);
 }
 
 .p-2 {
@@ -951,6 +947,11 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.drop-shadow-lg {
+  --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .duration-700 {
   transition-duration: 700ms;
 }
@@ -977,7 +978,7 @@ video {
 :root {
   --primary-color: #1b1c1e;
   --link-color: #506690;
-  --btn-hover-color: #262626;
+  --btn-hover-color: #b8b8b8;
   --lg-heading: #161c2d;
   --text-content: #454647;
   --fixed-header-height: 4.5rem;
@@ -987,7 +988,7 @@ video {
 
 body {
   width: 100%;
-  min-height: calc(100svh);
+  min-height: 100svh;
   overflow-x: hidden;
   background-color: #fafbfb;
   display: flex;
@@ -1029,6 +1030,9 @@ button {
 .header {
   height: var(--fixed-header-height);
   padding: 0 1.7rem;
+  width: 100vw;
+  left: 0;
+  top: 0;
 }
 
 /* ==== NAV ==== */
@@ -1062,13 +1066,12 @@ button {
 .nav_menu_item .nav_menu_link {
   font-size: 16.5px;
   line-height: 27px;
-  color: var(--link-color);
   text-transform: capitalize;
   letter-spacing: 0.5px;
 }
 
 .nav_menu_link:hover {
-  color: var(--primary-color);
+  color: #bababa
 }
 
 .toggle_btn {
@@ -1115,7 +1118,6 @@ button {
 .info-text {
   margin-top: 1.5rem;
   line-height: 24px;
-  color: #334157;
 }
 
 .btn_wrapper {
@@ -1411,12 +1413,9 @@ button {
 }
 
 body {
-  background: url(https://img.freepik.com/fotos-gratis/fundo-de-tecnologia-de-wireframe-abstrato-cinza_53876-101941.jpg?w=740&t=st=1693072043~exp=1693072643~hmac=7e89ecc950138bab1ac642ef98e3979f86a22efe9f383719ca91d3eda2a5ad54);
-  background-size: 100% 100vh;
   background-repeat: no-repeat;
-  min-height: 100svh;
-  width: 700px;
   max-width: 100%;
+  color: white;
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -1425,7 +1424,6 @@ body {
   background-color: transparent;
   width: 300px;
   height: 300px;
-  border: 1px solid #f1f1f1;
   max-width: 100%;
   perspective: 1000px;
   /* Remove this if you don't want the 3D effect */
@@ -1501,14 +1499,82 @@ body {
   display: block;
 }
 
+.animation-delay-2s {
+  animation-delay: 2s;
+}
+
+.animation-delay-1s {
+  animation-delay: 2s;
+}
+
+.animation-delay-3s {
+  animation-delay: 2s;
+}
+
+.translate-x-calc {
+  transform: translateX(calc(-100vw + 400px)) translateY(-10%);
+  border-radius: 50px;
+  width: 100vw;
+  border: 10px solid #17202E;
+  background-color: #17202E;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #17202E;
+  border-radius: 0px;
+}
+
+.first-letter\:pr-1::first-letter {
+  padding-right: 0.25rem;
+}
+
+.first-letter\:text-5xl::first-letter {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.first-letter\:text-pink-600::first-letter {
+  --tw-text-opacity: 1;
+  color: rgb(219 39 119 / var(--tw-text-opacity));
+}
+
 .hover\:scale-125:hover {
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.hover\:animate-ping:hover {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
 .hover\:bg-\[\#32323298\]:hover {
   background-color: #32323298;
+}
+
+.hover\:bg-\[\#FFFFFF19\]:hover {
+  background-color: #FFFFFF19;
 }
 
 .hover\:opacity-80:hover {
@@ -1548,6 +1614,10 @@ body {
 
   .md\:w-\[500px\] {
     width: 500px;
+  }
+
+  .md\:w-\[700px\] {
+    width: 700px;
   }
 
   .md\:grid-cols-3 {
@@ -1614,8 +1684,8 @@ body {
     gap: 2rem;
   }
 
-  .lg\:p-12 {
-    padding: 3rem;
+  .lg\:p-2 {
+    padding: 0.5rem;
   }
 
   .lg\:py-12 {
@@ -1623,8 +1693,3 @@ body {
     padding-bottom: 3rem;
   }
 }
-
-
-
-
-

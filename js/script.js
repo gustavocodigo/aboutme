@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const github_username = "gustavocodigo"
 
-    document.getElementById("topavatar").src = "https://github.com/" + github_username + ".png"
+    document.getElementById("topavatar").src = "http://github.com/gustavocodigo.png"
 
     function updateInterceptors() {
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-
+    
 
     document.addEventListener('scroll', function () {
 
@@ -116,25 +116,24 @@ document.addEventListener("DOMContentLoaded", () => {
     `
     
     
-    
-    <div class="rounded mt-4 w-full ">
+    <div class="rounded mt-4 w-full  hover:bg-[#FFFFFF19] ">
 
-    <div class="bg-[#121212DD] text-white px-4 py-2 rounded text-sm flex justify-between ">
+    <div class="bg-[#121212DD] text-white px-4 py-2 rounded text-sm flex justify-between hover:scale-70">
     <div>
     ${e.title}
     </div>
     
     <div class="flex gap-2">
-    <div id="red">
+    <div id="red" class="hover:animate-ping animation-delay-1s">
     </div>
-    <div id="yellow">
+    <div id="yellow" class="hover:animate-ping animation-delay-2s">
     </div>
-    <div id="green">
+    <div id="green" class="hover:animate-ping  animation-delay-3s">
     </div>
     </div>
     
     </div>
-    <p class="text-xs mt-4 px-2">
+    <p class="text-xs mt-4 px-2 ">
      ${e.description}
     </p>
    
@@ -249,7 +248,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById("projects").innerHTML = projectsArray.map((e) => `
       <a href="${e.link}" class="text-xs whitespace-normal max-w-full" target="__blank">
-      <div class="mt-2 p-2 bg-[#323232] w-full max-w-full text-white rounded flex items-center space-x-4 duration-700 hover:bg-[#32323298] flex gap-2">
+      <div class="mt-2 p-2 bg-[#17202E] w-full max-w-full text-white rounded flex items-center space-x-4 duration-700 hover:bg-[#32323298] flex gap-2">
       <img src="https://icons.iconarchive.com/icons/hopstarter/mac-folders-2/48/Folder-Mac-icon.png" width=28>
        ${e.name}
       </div>
