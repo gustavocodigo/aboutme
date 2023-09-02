@@ -569,3 +569,10 @@ body {
   height: 60px;
 }
 
+
+
+
+.fullscreen {
+  width: 100svw;
+  height: 100svh;
+}

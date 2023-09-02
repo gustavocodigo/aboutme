@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", () => {
         div.addEventListener("click", () => {
             const img = div.querySelector("img");
             document.getElementById("description-title").innerText = img.title;
-            document.getElementById("description").innerText = img.getAttribute("description");
+         document.getElementById("description").innerText = img.getAttribute("description");
             document.getElementById("infor").classList.remove("hidden")
 
 
