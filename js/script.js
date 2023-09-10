@@ -14,12 +14,21 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    
+    let lastScroll = 0
 
     document.addEventListener('scroll', function () {
 
 
         let scrollTop = document.documentElement.scrollTop
+
+
+        if ( lastScroll - scrollTop < 0) {
+            document.querySelector(".header").classList.add("header-bye")
+        }else{
+            document.querySelector(".header").classList.remove("header-bye")
+
+        }
+        lastScroll = scrollTop
 
         if (scrollTop <= 80) {
             let arrow1 = document.getElementById("arrow1")

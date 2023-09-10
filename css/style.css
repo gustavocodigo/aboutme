@@ -81,7 +81,15 @@ button {
   width: 100vw;
   left: 0;
   top: 0;
+  transition: 0.8s;
 }
+
+
+.header-bye {
+
+  transition: 0.4s;
+  transform: translateY(-100%);
+  }
 
 /* ==== NAV ==== */
 .nav {
